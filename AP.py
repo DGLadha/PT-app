@@ -13,17 +13,10 @@ replacement_values = {'56-70': (56, 70), '89-102': (89, 102)}
 # Replace NaN values in 'atomic_number' column with specified ranges
 data['atomic_number'] = data['atomic_number'].fillna(data['atomic_number'].apply(lambda x: next((k for k, v in replacement_values.items() if v[0] <= x <= v[1]), x)))
 
-#st.sidebar.slider('Group_num', 1, 18)
-#selected_option = st.sidebar.selectbox("Group_num", [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18])
 
 data_sorted = data.sort_values(by='atomic_number')
 
-#import altair as alt
 
-
-
-
-#------------------------------------------------
 selected_group = st.selectbox('Select Group Number', data['group_id'].unique())
 
 # Filter DataFrame based on selected group_id
