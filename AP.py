@@ -3,7 +3,7 @@ import plotly.express as px
 st.header('Atomic Radius Trend')
 
 
-data = pd.read_excel(r"C:\Users\divya\Divya_website\Element_properties_final_1.xlsx", sheet_name= 'Groupwise_elements', index_col=0)
+data = pd.read_excel(r"C:\Users\divya\Desktop\Streamlit_app\Element_properties_final_1.xlsx", sheet_name= 'Groupwise_elements', index_col=0)
 data['atomic_number'] = pd.to_numeric(data['atomic_number'], errors='coerce')
 
 #replacement_values = {'atomic_number': '56-70', 'atomic_number': '89-102'}
