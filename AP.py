@@ -67,5 +67,3 @@ fig.update_traces(textposition='outside')
 
 # Display the bar plot
 st.plotly_chart(fig)
-
-
