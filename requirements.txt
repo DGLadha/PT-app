@@ -206,7 +206,6 @@ packaging==21.0
 palettable==3.3.0
 pamqp==2.3.0
 pandas==1.2.3
-pandas-profiling==2.11.0
 pandocfilters==1.4.2
 panel==1.1.0
 param==1.13.0
