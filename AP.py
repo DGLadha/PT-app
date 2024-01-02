@@ -2,8 +2,8 @@ import streamlit as st, pandas as pd, numpy as np
 import plotly.express as px
 st.header('Atomic Radius Trend')
 
-
-data = pd.read_excel(r"C:\Users\divya\Desktop\Streamlit_app\Element_properties_final_1.xlsx", sheet_name= 'Groupwise_elements', index_col=0)
+github_url = 'https://raw.githubusercontent.com/DGLadha/PT-app/master/Element_properties_final_1.xlsx'
+data = pd.read_excel(github_url, sheet_name= 'Groupwise_elements', index_col=0)
 data['atomic_number'] = pd.to_numeric(data['atomic_number'], errors='coerce')
 
 #replacement_values = {'atomic_number': '56-70', 'atomic_number': '89-102'}
