@@ -1,10 +1,8 @@
-import streamlit as st, pandas as pd, numpy as np
-import plotly.express as px
+import streamlit as st, pandas as pd, numpy as np, plotly.express as px
 st.header('Atomic Radius Trend')
-sheet_id = "1XMdjQAfteBlC7g2XtKnpywKiZl68gPLt"
-sheet_name = "Groupwise_elements"
-url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}"
-data = pd.read_excel(url, index_col=0)
+
+
+data = pd.read_excel(r""C:\Users\divya\Desktop\Streamlit_app\Element_properties_final_1.xlsx"", sheet_name= 'Groupwise_elements', index_col=0)
 data['atomic_number'] = pd.to_numeric(data['atomic_number'], errors='coerce')
 
 #replacement_values = {'atomic_number': '56-70', 'atomic_number': '89-102'}
@@ -68,3 +66,5 @@ fig.update_traces(textposition='outside')
 
 # Display the bar plot
 st.plotly_chart(fig)
+
+
