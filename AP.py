@@ -1,8 +1,14 @@
 import streamlit as st, pandas as pd, numpy as np, plotly.express as px
 st.header('Atomic Radius Trend')
 
+url = 'https://raw.githubusercontent.com/DGLadha/PT-app/main/Element_properties_final_1.xlsx'
 
-data = pd.read_excel(r"C:\Users\divya\Desktop\Streamlit_app\Element_properties_final_1.xlsx", sheet_name= 'Groupwise_elements', index_col=0)
+try:
+    data = pd.read_excel(url, sheet_name= 'Groupwise_elements', index_col=0)
+    # Use 'data' according to your application
+except Exception as e:
+    print(f"Error accessing file from URL: {e}")
+
 data['atomic_number'] = pd.to_numeric(data['atomic_number'], errors='coerce')
 
 #replacement_values = {'atomic_number': '56-70', 'atomic_number': '89-102'}
