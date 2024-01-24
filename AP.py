@@ -66,6 +66,6 @@ fig = px.bar(filtered_data, x='name', y='Atomic Radius',
 fig.update_traces(textposition='outside')
 
 # Display the bar plot
-st.plotly_chart(fig)
+st.plotly_chart(fig, use_container_width=True)
 
 
