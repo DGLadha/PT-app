@@ -3,10 +3,10 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-
+url = 'https://raw.githubusercontent.com/DGLadha/PT-app/main/Element_properties_final_1.xlsx'
 def dashboard_one():
     st.title("Groupwise Analysis")
-    data = pd.read_excel(r"C:\Users\divya\Desktop\Streamlit_app\Element_properties_final_1.xlsx", sheet_name= 'Groupwise_elements', index_col=0)
+    data = pd.read_excel(url, sheet_name= 'Groupwise_elements', index_col=0)
     data['atomic_number'] = pd.to_numeric(data['atomic_number'], errors='coerce')
 
 #replacement_values = {'atomic_number': '56-70', 'atomic_number': '89-102'}
