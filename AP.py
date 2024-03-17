@@ -79,6 +79,8 @@ def dashboard_one():
     )
     fig.update_traces(textposition='outside')
 
+    fig.update_layout(legend=dict(font=dict(size=10)))
+
 
 
 # Display the bar plot
@@ -159,6 +161,7 @@ def dashboard_two():
     color_discrete_map=color_map
     )
     fig.update_traces(textposition='outside')
+    fig.update_layout(legend=dict(font=dict(size=10)))
 
 
 
@@ -244,6 +247,8 @@ def dashboard_three():
     )
     fig.update_traces(textposition='outside')
 
+    fig.update_layout(legend=dict(font=dict(size=10)))
+
 
 
 # Display the bar plot
@@ -325,6 +330,8 @@ def dashboard_four():
     color_discrete_map=color_map
     )
     fig.update_traces(textposition='outside')
+
+    fig.update_layout(legend=dict(font=dict(size=10)))
 
 
 
