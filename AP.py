@@ -45,7 +45,7 @@ def dashboard_one():
     """
     <style>
     div[data-baseweb="select"] > div:first-child {
-        width: 200px !important; /* Adjust the width as needed */
+        width: 400px !important; /* Adjust the width as needed */
     }
     </style>
     """,
@@ -60,7 +60,7 @@ def dashboard_one():
     """
     <style>
     .reportview-container .main .block-container {
-        max-width: 1000px;
+        max-width: 1600px;
     }
     </style>
     """,
@@ -128,7 +128,7 @@ def dashboard_two():
     """
     <style>
     div[data-baseweb="select"] > div:first-child {
-        width: 200px !important; /* Adjust the width as needed */
+        width: 400px !important; /* Adjust the width as needed */
     }
     </style>
     """,
@@ -143,7 +143,7 @@ def dashboard_two():
     """
     <style>
     .reportview-container .main .block-container {
-        max-width: 1000px;
+        max-width: 1600px;
     }
     </style>
     """,
@@ -213,7 +213,7 @@ def dashboard_three():
     """
     <style>
     div[data-baseweb="select"] > div:first-child {
-        width: 200px !important; /* Adjust the width as needed */
+        width: 400px !important; /* Adjust the width as needed */
     }
     </style>
     """,
@@ -228,7 +228,7 @@ def dashboard_three():
     """
     <style>
     .reportview-container .main .block-container {
-        max-width: 1000px;
+        max-width: 1600px;
     }
     </style>
     """,
@@ -297,7 +297,7 @@ def dashboard_four():
     """
     <style>
     div[data-baseweb="select"] > div:first-child {
-        width: 200px !important; /* Adjust the width as needed */
+        width: 400px !important; /* Adjust the width as needed */
     }
     </style>
     """,
@@ -312,7 +312,7 @@ def dashboard_four():
     """
     <style>
     .reportview-container .main .block-container {
-        max-width: 1000px;
+        max-width: 1600px;
     }
     </style>
     """,
