@@ -3,6 +3,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+st.set_page_config(layout="wide")
+
 url = 'https://raw.githubusercontent.com/DGLadha/PT-app/main/Element_properties_final_1.xlsx'
 def dashboard_one():
     st.title("Groupwise Analysis")
