@@ -88,7 +88,7 @@ def dashboard_one():
 # Display the bar plot
     st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("**\nNote:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
+    st.markdown("**Note:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
 
 
     st.markdown("**References:**")
