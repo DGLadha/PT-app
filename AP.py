@@ -178,7 +178,7 @@ def dashboard_two():
 
 # Display the bar plot
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("**\nNote:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
+    st.markdown("**Note:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
 
     st.markdown("**References:**")
     st.markdown("1. Beatriz Cordero, Verónica Gómez, Ana E Platero-Prats, Marc Revés, Jorge Echeverría, Eduard Cremades, Flavia Barragán, and Santiago Alvarez. Covalent radii revisited. Dalton Transactions, pages 2832, 2008. [URL](http://xlink.rsc.org/?DOI=b801115j), doi:10.1039/b801115j.")
@@ -271,7 +271,7 @@ def dashboard_three():
 
 # Display the bar plot
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("**\nNote:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
+    st.markdown("**Note:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
 
     st.markdown("**References:**")
     st.markdown("1. Beatriz Cordero, Verónica Gómez, Ana E Platero-Prats, Marc Revés, Jorge Echeverría, Eduard Cremades, Flavia Barragán, and Santiago Alvarez. Covalent radii revisited. Dalton Transactions, pages 2832, 2008. [URL](http://xlink.rsc.org/?DOI=b801115j), doi:10.1039/b801115j.")
@@ -362,7 +362,7 @@ def dashboard_four():
 
 # Display the bar plot
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("**\nNote:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
+    st.markdown("**Note:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
 
     st.markdown("**References:**")
     st.markdown("1. Beatriz Cordero, Verónica Gómez, Ana E Platero-Prats, Marc Revés, Jorge Echeverría, Eduard Cremades, Flavia Barragán, and Santiago Alvarez. Covalent radii revisited. Dalton Transactions, pages 2832, 2008. [URL](http://xlink.rsc.org/?DOI=b801115j), doi:10.1039/b801115j.")
