@@ -88,6 +88,15 @@ def dashboard_one():
 # Display the bar plot
     st.plotly_chart(fig, use_container_width=True)
 
+    st.markdown("**\nNote:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
+
+
+    st.markdown("**References:**")
+    st.markdown("1. Beatriz Cordero, Verónica Gómez, Ana E Platero-Prats, Marc Revés, Jorge Echeverría, Eduard Cremades, Flavia Barragán, and Santiago Alvarez. Covalent radii revisited. Dalton Transactions, pages 2832, 2008. [URL](http://xlink.rsc.org/?DOI=b801115j), doi:10.1039/b801115j.")
+    st.markdown("2. William M Haynes. CRC Handbook of Chemistry and Physics. 100 Key Points. CRC Press, London, 95th edition, 2014. ISBN 9781482208689. [URL](https://books.google.no/books?id=bNDMBQAAQBAJ).")
+    st.markdown("3. Kyle & laby tables of physical & chemical constants. (2017). 3.7.5 atomic radii. [Online; accessed 30-April-2017]. [URL](http://www.kayelaby.npl.co.uk/chemistry/3_7/3_7_5.html).")
+    st.markdown("4. https://www.rsc.org/periodic-table/")
+
 
 def dashboard_two():
     st.title("Periodwise Analysis")
@@ -169,6 +178,13 @@ def dashboard_two():
 
 # Display the bar plot
     st.plotly_chart(fig, use_container_width=True)
+    st.markdown("**\nNote:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
+
+    st.markdown("**References:**")
+    st.markdown("1. Beatriz Cordero, Verónica Gómez, Ana E Platero-Prats, Marc Revés, Jorge Echeverría, Eduard Cremades, Flavia Barragán, and Santiago Alvarez. Covalent radii revisited. Dalton Transactions, pages 2832, 2008. [URL](http://xlink.rsc.org/?DOI=b801115j), doi:10.1039/b801115j.")
+    st.markdown("2. William M Haynes. CRC Handbook of Chemistry and Physics. 100 Key Points. CRC Press, London, 95th edition, 2014. ISBN 9781482208689. [URL](https://books.google.no/books?id=bNDMBQAAQBAJ).")
+    st.markdown("3. Kyle & laby tables of physical & chemical constants. (2017). 3.7.5 atomic radii. [Online; accessed 30-April-2017]. [URL](http://www.kayelaby.npl.co.uk/chemistry/3_7/3_7_5.html).")
+    st.markdown("4. https://www.rsc.org/periodic-table/")
 
 
 
@@ -255,6 +271,13 @@ def dashboard_three():
 
 # Display the bar plot
     st.plotly_chart(fig, use_container_width=True)
+    st.markdown("**\nNote:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
+
+    st.markdown("**References:**")
+    st.markdown("1. Beatriz Cordero, Verónica Gómez, Ana E Platero-Prats, Marc Revés, Jorge Echeverría, Eduard Cremades, Flavia Barragán, and Santiago Alvarez. Covalent radii revisited. Dalton Transactions, pages 2832, 2008. [URL](http://xlink.rsc.org/?DOI=b801115j), doi:10.1039/b801115j.")
+    st.markdown("2. William M Haynes. CRC Handbook of Chemistry and Physics. 100 Key Points. CRC Press, London, 95th edition, 2014. ISBN 9781482208689. [URL](https://books.google.no/books?id=bNDMBQAAQBAJ).")
+    st.markdown("3. Kyle & laby tables of physical & chemical constants. (2017). 3.7.5 atomic radii. [Online; accessed 30-April-2017]. [URL](http://www.kayelaby.npl.co.uk/chemistry/3_7/3_7_5.html).")
+    st.markdown("4. https://www.rsc.org/periodic-table/")
 
 def dashboard_four():
     st.title("Lanthanides and Actinides Analysis")
@@ -339,6 +362,13 @@ def dashboard_four():
 
 # Display the bar plot
     st.plotly_chart(fig, use_container_width=True)
+    st.markdown("**\nNote:** It is to be noted covalent radius is considered for nonmetals, metallic radius is considered for metals, and VanderWaal radius is considered for noble gases for the trend analysis. However, sometimes when the data of respective radius is unavailable, then other type of radius is taken into consideration for such elements.")
+
+    st.markdown("**References:**")
+    st.markdown("1. Beatriz Cordero, Verónica Gómez, Ana E Platero-Prats, Marc Revés, Jorge Echeverría, Eduard Cremades, Flavia Barragán, and Santiago Alvarez. Covalent radii revisited. Dalton Transactions, pages 2832, 2008. [URL](http://xlink.rsc.org/?DOI=b801115j), doi:10.1039/b801115j.")
+    st.markdown("2. William M Haynes. CRC Handbook of Chemistry and Physics. 100 Key Points. CRC Press, London, 95th edition, 2014. ISBN 9781482208689. [URL](https://books.google.no/books?id=bNDMBQAAQBAJ).")
+    st.markdown("3. Kyle & laby tables of physical & chemical constants. (2017). 3.7.5 atomic radii. [Online; accessed 30-April-2017]. [URL](http://www.kayelaby.npl.co.uk/chemistry/3_7/3_7_5.html).")
+    st.markdown("4. https://www.rsc.org/periodic-table/")
 
 
 # Create sidebar navigation to switch between dashboards
