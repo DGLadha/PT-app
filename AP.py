@@ -2,6 +2,21 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import threading
+import requests
+import time
+
+st.set_page_config(layout="wide")
+
+def keep_alive():
+    while True:
+        # Replace 'http://localhost:8501' with the URL of your Streamlit app
+        requests.get('https://pt-app-cyy7yhjaqecurde69nmgvh.streamlit.app/')
+        time.sleep(300)  # Send a request every 5 minutes
+
+# Start the keep alive thread
+t = threading.Thread(target=keep_alive)
+t.start()
 
 st.set_page_config(layout="wide")
 
