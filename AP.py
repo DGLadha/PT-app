@@ -69,6 +69,11 @@ def dashboard_one():
     unsafe_allow_html=True
     )
 
+    # Update blank radius values to 'N/A'
+    filtered_data['VanderWaal_Radius'] = filtered_data['VanderWaal_Radius'].fillna('N/A')
+    filtered_data['Covalent_Radius'] = filtered_data['Covalent_Radius'].fillna('N/A')
+    filtered_data['Metallic_Radius'] = filtered_data['Metallic_Radius'].fillna('N/A')
+    
     color_map = dict(zip(data['name'], data['jmol_color']))
 
 # Bar plot based on the filtered data
