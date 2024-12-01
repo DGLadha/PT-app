@@ -6,7 +6,7 @@ on:
 
 jobs:
   ping:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Ping Streamlit App
         run: |
