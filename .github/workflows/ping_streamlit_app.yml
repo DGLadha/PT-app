@@ -1,12 +1,10 @@
 name: Ping Streamlit App
-
 on:
   schedule:
-    - cron: '*/5 * * * *'  # This sets the workflow to run every 5 minutes
-
+    - cron: '*/5 * * * *'  # Corrected cron syntax to run every 5 minutes
 jobs:
   ping:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest  # Recommended to use ubuntu instead of windows
     steps:
       - name: Ping Streamlit App
         run: |
