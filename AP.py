@@ -39,7 +39,7 @@ def dashboard_one():
     hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
+    selected_analysis = filtered_data[filtered_data == selected_bar]['Analysis'].values
     hover_data_above.markdown(
     f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
@@ -136,7 +136,7 @@ def dashboard_two():
    # hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
+    selected_analysis = filtered_data[filtered_data == selected_bar]['Analysis'].values
     hover_data_above.markdown(
     f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
@@ -228,7 +228,7 @@ def dashboard_three():
    # hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
+    selected_analysis = filtered_data[filtered_data == selected_bar]['Analysis'].values
     hover_data_above.markdown(
     f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
@@ -319,7 +319,7 @@ def dashboard_four():
    # hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
+    selected_analysis = filtered_data[filtered_data == selected_bar]['Analysis'].values
     hover_data_above.markdown(
     f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
