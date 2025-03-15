@@ -29,7 +29,7 @@ def dashboard_one():
     filtered_data = data[data['group_id'] == selected_group]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['group_id'])
+    #selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['group_id'])
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -38,7 +38,7 @@ def dashboard_one():
     hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['group_id'] == selected_bar]['Analysis'].values
+    selected_analysis = filtered_data[filtered_data['group_id'] == selected_group]['Analysis'].values
     hover_data_above.markdown(
     f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
@@ -120,10 +120,10 @@ def dashboard_two():
 
     data_sorted = data.sort_values(by='atomic_number')
 
-    selected_group = st.selectbox('Select Period Number', data['period'].unique())
+    selected_period = st.selectbox('Select Period Number', data['period'].unique())
 
 # Filter DataFrame based on selected group_id
-    filtered_data = data[data['period'] == selected_group]
+    filtered_data = data[data['period'] == selected_period]
 
 # Handle click event on the bar plot
     #selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['period'])
@@ -135,7 +135,7 @@ def dashboard_two():
    # hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['period'] == selected_bar]['Analysis'].values
+    selected_analysis = filtered_data[filtered_data['period'] == selected_period]['Analysis'].values
     hover_data_above.markdown(
     f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
@@ -151,7 +151,7 @@ def dashboard_two():
     )
 
 # Display the group ID dropdown
-    st.markdown(f"### Period Number: {selected_group}")
+    st.markdown(f"### Period Number: {selected_period}")
 
 # Adjust the width of the text container
     st.markdown(
@@ -170,7 +170,7 @@ def dashboard_two():
 # Bar plot based on the filtered data
     fig = px.bar(
     filtered_data, x='name', y='Atomic Radius',
-    title=f'Atomic Radius Trend for Group {selected_group}', 
+    title=f'Atomic Radius Trend for Period {selected_period}', 
     hover_data=['electronic_configuration', 'VanderWaal_Radius', 'Covalent_Radius', 'Metallic_Radius'],
     color='name',
     color_discrete_map=color_map
@@ -212,13 +212,13 @@ def dashboard_three():
 
     data_sorted = data.sort_values(by='atomic_number')
 
-    selected_group = st.selectbox('Select Series Number', data['series'].unique())
+    selected_series = st.selectbox('Select Series Number', data['series'].unique())
 
 # Filter DataFrame based on selected group_id
-    filtered_data = data[data['series'] == selected_group]
+    filtered_data = data[data['series'] == selected_series]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['series'])
+    #selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['series'])
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -227,7 +227,7 @@ def dashboard_three():
    # hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['series'] == selected_bar]['Analysis'].values
+    selected_analysis = filtered_data[filtered_data['series'] == selected_series]['Analysis'].values
     hover_data_above.markdown(
     f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
@@ -243,7 +243,7 @@ def dashboard_three():
     )
 
 # Display the group ID dropdown
-    st.markdown(f"### Series Number: {selected_group}")
+    st.markdown(f"### Series Number: {selected_series}")
 
 # Adjust the width of the text container
     st.markdown(
@@ -262,7 +262,7 @@ def dashboard_three():
 # Bar plot based on the filtered data
     fig = px.bar(
     filtered_data, x='name', y='Atomic Radius',
-    title=f'Atomic Radius Trend for Group {selected_group}', 
+    title=f'Atomic Radius Trend for Series {selected_series}', 
     hover_data=['electronic_configuration', 'VanderWaal_Radius', 'Covalent_Radius', 'Metallic_Radius'],
     color='name',
     color_discrete_map=color_map
@@ -303,13 +303,13 @@ def dashboard_four():
 
     data_sorted = data.sort_values(by='atomic_number')
 
-    selected_group = st.selectbox('Select Lanthanide or Actinide', data['Lanthanide and Actinide'].unique())
+    selected_Lanthanide_and_Actinide = st.selectbox('Select Lanthanide or Actinide', data['Lanthanide and Actinide'].unique())
 
 # Filter DataFrame based on selected group_id
-    filtered_data = data[data['Lanthanide and Actinide'] == selected_group]
+    filtered_data = data[data['Lanthanide and Actinide'] == selected_Lanthanide_and_Actinide]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['Lanthanide and Actinide'])
+    #selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['Lanthanide and Actinide'])
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -318,7 +318,7 @@ def dashboard_four():
    # hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['Lanthanide and Actinide'] == selected_bar]['Analysis'].values
+    selected_analysis = filtered_data[filtered_data['Lanthanide and Actinide'] == selected_Lanthanide_and_Actinide]['Analysis'].values
     hover_data_above.markdown(
     f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
@@ -334,7 +334,7 @@ def dashboard_four():
     )
 
 # Display the group ID dropdown
-    st.markdown(f"### Lanthanide or Actinide: {selected_group}")
+    st.markdown(f"### Lanthanide or Actinide: {selected_Lanthanide_and_Actinide}")
 
 # Adjust the width of the text container
     st.markdown(
@@ -353,7 +353,7 @@ def dashboard_four():
 # Bar plot based on the filtered data
     fig = px.bar(
     filtered_data, x='name', y='Atomic Radius',
-    title=f'Atomic Radius Trend for Group {selected_group}', 
+    title=f'Atomic Radius Trend for Lanthanide and Actinide {selected_Lanthanide_and_Actinide}', 
     hover_data=['electronic_configuration', 'VanderWaal_Radius', 'Covalent_Radius', 'Metallic_Radius'],
     color='name',
     color_discrete_map=color_map
