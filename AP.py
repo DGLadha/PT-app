@@ -54,7 +54,7 @@ def dashboard_one():
     )
 
 # Display the group ID dropdown
-    st.markdown(f"### Group Number: {selected_group}")
+    #st.markdown(f"### Group Number: {selected_group}")
 
 # Adjust the width of the text container
     st.markdown(
