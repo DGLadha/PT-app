@@ -29,7 +29,7 @@ def dashboard_one():
     filtered_data = data[data['group_id'] == selected_group]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
+    #selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -38,9 +38,9 @@ def dashboard_one():
     hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
-    hover_data_above.markdown(
-    f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
+    #selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
+    #hover_data_above.markdown(
+    #f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
     st.markdown(
     """
@@ -126,7 +126,7 @@ def dashboard_two():
     filtered_data = data[data['period'] == selected_group]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
+    #selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -135,9 +135,9 @@ def dashboard_two():
    # hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
-    hover_data_above.markdown(
-    f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
+    #selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
+    #hover_data_above.markdown(
+    #f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
     st.markdown(
     """
@@ -218,7 +218,7 @@ def dashboard_three():
     filtered_data = data[data['series'] == selected_group]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
+    #selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -227,9 +227,9 @@ def dashboard_three():
    # hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
-    hover_data_above.markdown(
-    f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
+    #selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
+    #hover_data_above.markdown(
+    #f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
     st.markdown(
     """
@@ -309,7 +309,7 @@ def dashboard_four():
     filtered_data = data[data['Lanthanide and Actinide'] == selected_group]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
+    #selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -318,9 +318,9 @@ def dashboard_four():
    # hover_data_below = st.empty()
 
 # Display the analysis text above the bar graph
-    selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
-    hover_data_above.markdown(
-    f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
+    #selected_analysis = filtered_data[filtered_data['name'] == selected_bar]['Analysis'].values
+    #hover_data_above.markdown(
+    #f"### Trend Analysis:\n{selected_analysis[0] if len(selected_analysis) > 0 else 'N/A'}")
 
     st.markdown(
     """
