@@ -30,7 +30,7 @@ def dashboard_one():
     filtered_data = data[data['group_id'] == selected_group]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
+    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data)
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -127,7 +127,7 @@ def dashboard_two():
     filtered_data = data[data['period'] == selected_group]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
+    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data)
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -219,7 +219,7 @@ def dashboard_three():
     filtered_data = data[data['series'] == selected_group]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
+    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data)
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
@@ -310,7 +310,7 @@ def dashboard_four():
     filtered_data = data[data['Lanthanide and Actinide'] == selected_group]
 
 # Handle click event on the bar plot
-    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data['name'])
+    selected_bar = st.selectbox('Select element for trend reasoning:', filtered_data)
 
 # Show text container with hover information above the bar graph
     hover_data_above = st.empty()
