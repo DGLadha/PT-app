@@ -151,7 +151,7 @@ def dashboard_two():
     )
 
 # Display the group ID dropdown
-    st.markdown(f"### Period Number: {selected_period}")
+    #st.markdown(f"### Period Number: {selected_period}")
 
 # Adjust the width of the text container
     st.markdown(
@@ -243,7 +243,7 @@ def dashboard_three():
     )
 
 # Display the group ID dropdown
-    st.markdown(f"### Series Number: {selected_series}")
+    #st.markdown(f"### Series Number: {selected_series}")
 
 # Adjust the width of the text container
     st.markdown(
@@ -334,7 +334,7 @@ def dashboard_four():
     )
 
 # Display the group ID dropdown
-    st.markdown(f"### Lanthanide or Actinide: {selected_Lanthanide_and_Actinide}")
+    #st.markdown(f"### Lanthanide or Actinide: {selected_Lanthanide_and_Actinide}")
 
 # Adjust the width of the text container
     st.markdown(
